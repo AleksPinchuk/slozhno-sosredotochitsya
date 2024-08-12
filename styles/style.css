@@ -1,5 +1,117 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: auto;
+  color: var(--font-color);
+  font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  inline-size: 100%;
+  block-size: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: min-content;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  padding-inline-start: 0;
+  min-block-size: 100vh;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-block-end: 20px;
+  inset-inline-start: 20px;
+}
+
+.decor-text {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.decor-text::before {
+  content: "rec";
+  color: var(--accent-color);
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.decor-text::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.header-title {
+  margin-block-start: 273px;
+  margin-block-end: 114px;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 130px;
+  text-shadow: var(--accent-color) 4px 4px;
+}
+
+.header-text {
+  justify-self: end;
+  font-weight: bold;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: var(--accent-color);
+  block-size: 73px;
+  inline-size: 491px;
+}
+
+.header__theme-menu {
+  justify-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-list-item {
+  inline-size: 26px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
 }
