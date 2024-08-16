@@ -1,8 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+/* Стили для хэдера */
 .page {
-  margin: auto;
+  position: relative;
+  margin: 0 auto;
   color: var(--font-color);
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -11,23 +13,25 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  max-inline-size: 1024px;
   inline-size: 100%;
   block-size: 100vh;
 }
 
 .header {
+  position: relative;
   display: grid;
-  grid-template-rows: min-content;
+  grid-template-rows: 1fr auto 1fr auto;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  padding-inline-start: 0;
-  min-block-size: 100vh;
+  block-size: max(668px, 100vh);
+  margin-block-end: 60px;
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 20px;
@@ -37,8 +41,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decor-color);
+  border-block-end: 1px solid var(--decor-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 20px;
@@ -73,8 +77,7 @@
 }
 
 .header-title {
-  margin-block-start: 273px;
-  margin-block-end: 114px;
+  margin-inline-start: -20px;
   color: var(--title-color);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -84,11 +87,13 @@
 
 .header-text {
   justify-self: end;
+  margin-top: 114px;
+  color: var(--font-color-accent);
   font-weight: bold;
   line-height: 23.4px;
   text-align: left;
   background-color: var(--accent-color);
-  block-size: 73px;
+  block-size: 67px;
   inline-size: 491px;
 }
 
@@ -100,7 +105,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: var(--accent-color);
+  color: var(--button-font);
 }
 
 .header__theme-menu-list-item {
@@ -109,9 +114,95 @@
 
 .header__theme-menu-button {
   border: none;
+  text-transform: lowercase;
   background: transparent;
+  min-inline-size: 70px;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-color);
+  pointer-events: none;
 }
+
+/* Стили состояния кнопок по ховеру и по фокусу */
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--decor-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--decor-color);
+  outline: none;
+}
+
+.header__theme-menu-item:focus {
+  border: none;
+  outline: none;
+}
+
+/* Стили для секций с текстом */
+
+.section {
+  margin: 0 20px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.section:last-of-type {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--button-font);
+}
+
+.section-article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Расположение в сетке */
+.cause .section-article {
+  grid-column: 2/4;
+}
+
+.reason .section-article {
+  grid-column: span 1;
+  grid-row: 2 / 3;
+}
+
+.advice .section-title {
+  grid-row: span 2;
+}
+
+.advice .section-article {
+  grid-column: 2/4;
+}
+
+.advice .section-article-title {
+  grid-column: span 2;
+}
+
+.section-article-title {
+  background: var(--accent-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--font-color-accent);
+}
+
+.section-article-subtitle {
+  background: var(--accent-color);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--font-color-accent);
+}
+
+

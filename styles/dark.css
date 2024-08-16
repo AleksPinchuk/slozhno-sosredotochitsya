@@ -14,7 +14,27 @@
   */
   --bg-color: #000028;
   --accent-color: #FF0070;
+  --decor-color: #FF0070;
+  --decor-hover: rgba(255, 0, 112, 0.4);
   --font-color: #F1B2CE;
   --bg-image: url(/images/cover-image-dark.png);
+  --button-font: #FF0070;
   --title-color: #DB00FF;
+  --font-color-accent: #000028;
+
+}
+
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --bg-color: #000028;
+  --accent-color: #FF0070;
+  --decor-color: #FF0070;
+  --decor-hover: rgba(255, 0, 112, 0.4);
+  --font-color: #F1B2CE;
+  --bg-image: url(/images/cover-image-dark.png);
+  --button-font: #FF0070;
+  --title-color: #DB00FF;
+  --font-color-accent: #000028;
+  }
 }
