@@ -4,37 +4,35 @@
   переключая тему
 */
 
-
-
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #000028;
-  --accent-color: #FF0070;
-  --decor-color: #FF0070;
+  --accent-color: #ff0070;
+  --decor-color: #ff0070;
   --decor-hover: rgba(255, 0, 112, 0.4);
-  --font-color: #F1B2CE;
+  --font-color: #f1b2ce;
   --bg-image: url(/images/cover-image-dark.png);
-  --button-font: #FF0070;
-  --title-color: #DB00FF;
+  --button-font: #ff0070;
+  --title-color: #db00ff;
   --font-color-accent: #000028;
-
+  --display-decor: flex;
 }
 
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
-  --accent-color: #FF0070;
-  --decor-color: #FF0070;
-  --decor-hover: rgba(255, 0, 112, 0.4);
-  --font-color: #F1B2CE;
-  --bg-image: url(/images/cover-image-dark.png);
-  --button-font: #FF0070;
-  --title-color: #DB00FF;
-  --font-color-accent: #000028;
+    --accent-color: #ff0070;
+    --decor-color: #ff0070;
+    --decor-hover: rgba(255, 0, 112, 0.4);
+    --font-color: #f1b2ce;
+    --bg-image: url(/images/cover-image-dark.png);
+    --button-font: #ff0070;
+    --title-color: #db00ff;
+    --font-color-accent: #000028;
+    --display-decor: flex;
   }
 }

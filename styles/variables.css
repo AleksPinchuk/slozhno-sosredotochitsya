@@ -13,6 +13,5 @@
   --button-font: #FF0070;
   --bg-image: url(/images/cover-image-dark.png);
   --title-color: #DB00FF;
-  
-
+  --display-decor: flex;
 }

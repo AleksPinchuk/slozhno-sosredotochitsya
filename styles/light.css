@@ -20,6 +20,7 @@
   --button-font: #353430;
   --title-color: #FFC2E6;
   --font-color-accent: #353430;
+  --display-decor: none;
 }
 
 
@@ -34,5 +35,6 @@
     --button-font: #353430;
     --title-color: #FFC2E6;
     --font-color-accent: #353430;
+    --display-decor: none;
   }
 }

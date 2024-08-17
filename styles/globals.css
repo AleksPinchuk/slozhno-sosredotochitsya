@@ -28,6 +28,11 @@ ul {
   list-style: none;
 }
 
+li {
+  display: block;
+}
+
+
 picture {
   margin: 0;
   padding: 0;
