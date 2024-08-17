@@ -29,7 +29,7 @@
     --decor-color: #ff0070;
     --decor-hover: rgba(255, 0, 112, 0.4);
     --font-color: #f1b2ce;
-    --bg-image: url(/images/cover-image-dark.png);
+    --bg-image: url(../images/cover-image-dark.png);
     --button-font: #ff0070;
     --title-color: #db00ff;
     --font-color-accent: #000028;
