@@ -214,11 +214,11 @@
 }
 
 .link:focus {
- outline: none;
+  outline: none;
 }
 
 .link:focus-visible {
- outline: 1px solid;
+  outline: 1px solid;
 }
 
 /* Стили для секции галереи изображений */
@@ -292,6 +292,11 @@
 @media (width < 768px) {
   /* Стили при ширине окна просмотра < 768px  */
   /* Изменения хэдера */
+
+  .header {
+    margin-block-end: 40px;
+  }
+
   .header__theme-menu {
     justify-self: end;
     align-self: center;

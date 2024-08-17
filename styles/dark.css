@@ -21,7 +21,6 @@
   --display-decor: flex;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
