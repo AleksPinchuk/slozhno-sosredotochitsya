@@ -8,6 +8,8 @@
   color: var(--font-color);
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-position: center;
