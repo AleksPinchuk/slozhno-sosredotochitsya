@@ -5,13 +5,13 @@
 .page {
   position: relative;
   margin: 0 auto;
-  color: var(--font-color,#F1B2CE);
+  color: var(--font-color, #f1b2ce);
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 23.4px;
-  background-color: var(--bg-color,#000028);
-  background-image: var(--bg-image,url(/images/cover-image-dark.png));
+  background-color: var(--bg-color, #000028);
+  background-image: var(--bg-image, url(/images/cover-image-dark.png));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -29,7 +29,8 @@
   block-size: max(668px, 100vh);
 }
 
-.decorated-zone::before,.decorated-zone::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   inline-size: 25px;
@@ -37,15 +38,15 @@
 }
 
 .decorated-zone::before {
-  border-inline-end: 1px solid var(--decor-color,#FF0070);
-  border-block-start: 1px solid var(--decor-color,#FF0070);
+  border-inline-end: 1px solid var(--decor-color, #ff0070);
+  border-block-start: 1px solid var(--decor-color, #ff0070);
   inset-block-start: 20px;
   inset-inline-end: 20px;
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--decor-color,#FF0070);
-  border-block-end: 1px solid var(--decor-color,#FF0070);
+  border-inline-start: 1px solid var(--decor-color, #ff0070);
+  border-block-end: 1px solid var(--decor-color, #ff0070);
   inset-block-end: 20px;
   inset-inline-start: 20px;
 }
@@ -54,14 +55,14 @@
   position: absolute;
   top: 20px;
   right: 28px;
-  display: var(--display-decor,flex);
+  display: var(--display-decor, flex);
   align-items: center;
   gap: 10px;
 }
 
 .decor-text::before {
   content: "rec";
-  color: var(--accent-color,#FF0070);
+  color: var(--accent-color, #ff0070);
   font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
@@ -71,14 +72,14 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color,#FF0070);
-  background: var(--accent-color,#FF0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
+  background: var(--accent-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
 }
 
 .title {
-  color: var(--title-color,#DB00FF);
+  color: var(--title-color, #db00ff);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
@@ -86,18 +87,18 @@
 
 .header-title {
   margin-inline-start: -20px;
-  text-shadow: 4px 4px 0 var(--accent-color,#FF0070);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 .header-text {
   justify-self: end;
   margin-top: 114px;
   margin-bottom: auto;
-  color: var(--font-color-accent,#000028);
+  color: var(--font-color-accent, #000028);
   font-weight: bold;
   line-height: 23.4px;
   text-align: left;
-  background-color: var(--accent-color,#FF0070);
+  background-color: var(--accent-color, #ff0070);
   max-inline-size: 491px;
 }
 
@@ -109,7 +110,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: var(--button-font,#FF0070);
+  color: var(--button-font, #ff0070);
 }
 
 .header__theme-menu-button {
@@ -120,18 +121,18 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--decor-color,#FF0070);
+  outline: 1px solid var(--decor-color, #ff0070);
   pointer-events: none;
 }
 
 /* Стили состояния кнопок по ховеру и по фокусу */
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--decor-hover,rgba(255, 0, 112, 0.4));
+  border: 1px solid var(--decor-hover, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--decor-color,#FF0070);
+  border-bottom: 1px solid var(--decor-color, #ff0070);
   outline: none;
 }
 
@@ -155,21 +156,22 @@
 }
 
 .section-title {
-  color: var(--font-color-accent,#000028);
+  color: var(--font-color-accent, #000028);
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  background: var(--accent-color,#FF0070);
+  background: var(--accent-color, #ff0070);
 }
 
 .h2 {
-  color: var(--button-font,#FF0070);
+  color: var(--button-font, #ff0070);
   font-weight: bold;
   background: none;
 }
 
-.h3, .h4 {
-  color: var(--font-color-accent,#000028);
+.h3,
+.h4 {
+  color: var(--font-color-accent, #000028);
 }
 
 .h4 {
@@ -208,7 +210,7 @@
 }
 
 .link {
-  text-shadow: 2px 1px 0 var(--accent-color,#FF0070);
+  text-shadow: 2px 1px 0 var(--accent-color, #ff0070);
 }
 
 .link:hover {
@@ -259,7 +261,7 @@
 .footer-title {
   grid-row: 2;
   text-align: center;
-  text-shadow: 2px 2px 0 var(--accent-color,#FF0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
 /* Медиазапросы для разных устройств */
@@ -347,6 +349,10 @@
 
   .gallery {
     gap: 10px;
+  }
+
+  .gallery-picture {
+    grid-column: span 3;
   }
 
   .footer-title {
