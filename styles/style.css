@@ -163,18 +163,18 @@
   background: var(--accent-color, #ff0070);
 }
 
-.h2 {
+.section-title-accent {
   color: var(--button-font, #ff0070);
   font-weight: bold;
   background: none;
 }
 
-.h3,
-.h4 {
+.section-title-bold,
+.section-title-normal {
   color: var(--font-color-accent, #000028);
 }
 
-.h4 {
+.section-title-normal {
   font-weight: normal;
 }
 
@@ -189,15 +189,11 @@
   grid-column: 2/4;
 }
 
-.reason .h2 {
-  grid-column: 1;
+.reason .section-title-accent {
+  grid-column: 1 / -1; 
 }
 
-.reason .section-article {
-  grid-row: 2;
-}
-
-.advice .h2 {
+.advice .section-title-accent {
   grid-row: span 2;
 }
 
@@ -205,7 +201,7 @@
   grid-column: 2/4;
 }
 
-.advice .h3 {
+.advice .section-title-bold {
   grid-column: span 2;
 }
 
@@ -226,7 +222,7 @@
 }
 
 /* Стили для секции галереи изображений */
-.gallery .h2 {
+.gallery .section-title-accent {
   grid-column: span 3;
 }
 
@@ -272,7 +268,6 @@
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
   }
 }
