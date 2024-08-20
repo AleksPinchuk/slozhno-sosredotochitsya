@@ -189,13 +189,18 @@
   grid-column: 2/4;
 }
 
+.section-container {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
 .reason .section-title-accent {
   grid-column: 1;
   grid-row: 1;
-}
-
-.reason .section-article {
-  grid-row: 2;
 }
 
 .advice .section-title-accent {
