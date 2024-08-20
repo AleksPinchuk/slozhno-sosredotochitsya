@@ -272,6 +272,13 @@
 
 /* Медиазапросы для разных устройств */
 @media (width < 1024px) {
+  /* Стили при ширине окна просмотра >= 768px и < 1024px */
+  /* Изменения хэдера */
+  .header-text {
+    margin-top: 162px;
+    max-inline-size: 364px;
+  }
+
   .header__theme-menu {
     justify-self: end;
     align-self: center;
@@ -280,15 +287,7 @@
   .header__theme-menu-list {
     flex-direction: column;
   }
-}
 
-@media (768px <= width < 1024px) {
-  /* Стили при ширине окна просмотра >= 768px и < 1024px */
-  /* Изменения хэдера */
-  .header-text {
-    margin-top: 162px;
-    max-inline-size: 364px;
-  }
   /* Стили для секций */
   .section:not(.gallery) {
     gap: 20px 35px;
@@ -340,6 +339,10 @@
   .section {
     display: block;
     margin: 0 10px 50px;
+  }
+
+  .section-container{
+    display: block;
   }
 
   .section:last-of-type {
