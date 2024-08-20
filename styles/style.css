@@ -190,7 +190,12 @@
 }
 
 .reason .section-title-accent {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.reason .section-article {
+  grid-row: 2;
 }
 
 .advice .section-title-accent {
