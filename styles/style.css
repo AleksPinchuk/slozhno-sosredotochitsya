@@ -232,7 +232,7 @@
 }
 
 /* Стили для секции галереи изображений */
-.gallery .section-title-accent {
+.gallery .section-title-bold {
   grid-column: span 3;
 }
 
