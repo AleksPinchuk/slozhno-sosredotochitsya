@@ -345,6 +345,10 @@
     display: block;
   }
 
+  .section-article {
+    margin-bottom: 20px;
+  }
+
   .section:last-of-type {
     margin-bottom: 40px;
   }
